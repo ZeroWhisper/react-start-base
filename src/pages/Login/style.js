@@ -1,6 +1,15 @@
 import styled from "styled-components";
 // import styles from "styles";
 
+export const Center = styled.div`
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+`;
+
 export const Box = styled.div`
   display: flex;
   flex: 1;
@@ -11,9 +20,8 @@ export const Box = styled.div`
 
 export const BoxLoginCenter = styled.div`
   width: 100%;
-  max-width: 400px;
   padding: 0 20px;
-  align-self: center;
+  // border: 1px solid red;
 `;
 
 export const TitleLogin = styled.div`
@@ -49,7 +57,7 @@ export const BoxLoginInput = styled.div`
     border: 0;
     padding: 0px 20px;
     background-color: #1daa6a;
-    color: white;
+    color: white !important;
     &::placeholder {
       color: white;
     }

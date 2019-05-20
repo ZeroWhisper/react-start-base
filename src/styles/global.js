@@ -12,6 +12,14 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 
+  /* Change the white to any color ;) */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active  {
+      -webkit-box-shadow: 0 0 0 30px #1daa6a inset !important;
+  }
+
   body {
     background: #1A854D;
     text-rendering: optimizeLegibility !important;
@@ -28,6 +36,15 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     outline: inherit;
   }
+
+  .nonecss {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
 `;
 
 export default GlobalStyle;
